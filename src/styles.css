@@ -1,4 +1,8 @@
-.App {
+.main {
   font-family: sans-serif;
   text-align: center;
+  /* color: red; */
+  font-size: 16px;
+  padding: 10px;
+  line-height: 22px;
 }

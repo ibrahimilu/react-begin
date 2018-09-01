@@ -1,24 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles.css";
 
 class HelloUser extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      username: 'Ibrahim Jabbar'
-    }
+      username: "Ibrahim Jabb"
+    };
 
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChange = this.handleChange.bind(this);
   }
   handleChange(e) {
     this.setState({
       username: e.target.value
-    })
+    });
   }
   render() {
     return (
-      <div>
+      <div className="main">
         Hello {this.state.username} <br />
         Change Name:
         <input
@@ -27,7 +28,7 @@ class HelloUser extends React.Component {
           onChange={this.handleChange}
         />
       </div>
-    )
+    );
   }
 }
-ReactDOM.render(<HelloUser />, document.getElementById('root'));
+ReactDOM.render(<HelloUser />, document.getElementById("root"));
